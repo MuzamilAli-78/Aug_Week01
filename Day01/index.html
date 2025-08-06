@@ -3,17 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
     <title>Portfolio</title>
 </head>
 <body>
-    <div class="navbar">
-        <ul class="navbar">
-            <li><a href="#profile">Muzamil Ali</a></li>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-        </ul>
+    <!-- <header>
+        <nav class="navbar">
+            <input type="checkbox" name="check" id="check">
+            <label for="check" class="check-btn">
+               <i class="material-icons">menu</i>
+            </label>
+            <a class="logo" href="#">Muzamil Ali</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+            </ul>
+        </nav>
+    </header> -->
+
+
+    <div class="top-nav">
+        <div class="left-items">
+            <p class="name">Muzamil <span>Ali</span></p>
+        </div>
+        <nav>
+            <div class="right-items">
+                <a href="#home">Home</a>
+                <a href="#experience">Experience</a>
+                <a href="#services">Services</a>
+                <a href="#contacts">Contacts</a>
+            </div>
+        </nav>
+        <button class="right-bars">
+            <i class="material-icons">menu</i>
+        </button>
+    </div>
+    
+    <section id="home">
+        <div class="home_page">
+            <div class="home_content">
+                <div class="home_info">
+                    <h5 class="home_info-title">Hello, Welcome</h5>
+                    <h2 class="home_info-name">I'm Muzamil Ali</h2>
+                    <div class="home_info-description">
+                        I am a versatile developer and graphic designer with a passion for
+                        creating innovative and visually stunning digital solutions. With 3
+                        years of experience in graphic design and a strong background in mobile
+                        and web development, I strive to deliver high-quality projects that
+                        exceed user expectations. Let's build something amazing together.
+                    </div>
+                    <div>
+                        <button class="home_contact-btn">Contact Me</button>
+                    </div>
+                </div>
+                <div>
+                <img src="./profile.jpg" alt="Profile" />
+                </div>
+            </div>
+        </div>      
+    </section>
+    
+    <section id="experience">
+        
+    </section>
+    
+    <section id="services">
+        
+    </section>
+
+    <section id="contacts">
+        <div class="contact-page">
+        <div class="heading">Contact <span>Me</span></div>
+        <div class="info-title">Let's Work Together</div>
+        <div class="description">
+            Have a project in mind? Whether you're looking for a developer, designer, or
+            just want to say hello, I'd love to hear from you! Feel free to reach out
+            using the form below or through any of the following channels.
+        </div>
+        <form action="submit">
+            <input type="text" name="Name" id="Name" placeholder="Name" />
+            <input type="text" name="Email" id="Email" placeholder="Email" />
+            <input type="text" name="Message" id="Message" placeholder="Message"/>
+            <div>
+                <button class="contact-btn">Submit</button>
+            </div>
+        </form>
+        </div>
+    </section>
+
+        
     </div>
     
 </body>
