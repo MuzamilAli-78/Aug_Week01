@@ -55,14 +55,14 @@
 
 
     <section id="home">
-        <img src="./images/profile.jpg" alt="Profile" />
+        <img class="imageReveal" src="./images/profile.jpg" alt="Profile" />
 
         <h2 class="home_name">I'm Muzamil Ali</h2>
 
-        <h1 class="home_role">Front-End Developer</h1>
+        <h1 class="home_role fadeUp">Front-End Developer</h1>
 
-        <p class="home_description">
-            A passionate Frontend / Fullstack Web developer and UI/UX enthusiast specialized in building interactive websites/applications. Let's build something amazing together.
+        <p class="home_description fadeUp">
+            A passionate Frontend / Fullstack Web developer and UI/UX enthusiast specialized in building interactive websites/applications. I enjoy turning design ideas into clean, efficient code and continuously improving user experiences through thoughtful development. Let's build something amazing together.
         </p>
         <a class="home_contact-btn" href="#contacts">Contact Me</a>
        
@@ -72,64 +72,70 @@
     
     <section id="about">
         <div class="about-content">
-            <h2 class="about-title">
+            <h2 class="about-title autoShow">
                 About
             </h2>
-            <p class="about-description">
+            <p class="about-description fadeUp autoShow">
                 I'm a Full Stack Developer and Graphic Designer with 3 years of experience in graphic design. I've worked across both front-end and back-end technologies, using tools like Angular, React, Flutter, Node.js, Firebase, and MongoDB to build web and mobile applications.
             </p>
-            <p class="about-description">
+            <p class="about-description fadeUp autoShow">
                  My background in UI/UX design with Figma helps me create clean, user-friendly interfaces that work well and look great. I enjoy turning ideas into working products by crafting practical solutions, writing clean and reliable code, and delivering applications that solve real-world problems.
             </p>
             <hr class="about-hr">
-            <h3 class="about-subtitle">
+            <h3 class="about-subtitle autoShow">
                 Technologies
             </h3>
-            <ul class="about-ul">
-                <li class="about-list">Angular</li>
-                <li class="about-list">React</li>
-                <li class="about-list">Flutter</li>
-                <li class="about-list">JavaScript</li>
-                <li class="about-list">HTML</li>
-                <li class="about-list">CSS</li>
-            </ul>
+            <table class="about-table">
+                <tr>
+                    <td class="about-list autoShow">Angular</td>
+                    <td class="about-list autoShow">React</td>
+                    <td class="about-list autoShow">JavaScript</td>
+                </tr>
+                <tr>
+                    <td class="about-list autoShow">Flutter</td>
+                    <td class="about-list autoShow">HTML</td>
+                    <td class="about-list autoShow">CSS</td>                                       
+
+                </tr>
+            </table>
         </div>
     </section>
     
     <section id="projects">
-        <h2 class="project_title">Projects</h2>
-        <p class="project_description">Here are some of the projects I've worked on, from building real-time AI systems to mobile apps and games. Each one taught me something new and helped me grow as a developer. Take a look!</p>
+        <h2 class="project_title autoShow">Projects</h2>
+        <p class="project_description fadeUp">Here are some of the projects I've worked on, from building real-time AI systems to mobile apps and games. Each one taught me something new and helped me grow as a developer. Take a look!</p>
         
-        <div class="project-tiles">
-            <div class="tile">
+        <div class="project-tiles ">
+            <div class="tile slideInLeft">
                 <h3 class="project-heading">Automatic - Traffic Violation</h3>
-                <img src="./images/traffic.jpg" alt="Traffic" />
-                <p class="project-info">Built a real-time system to detect red-light violations using YOLOv8 and SORT tracking. Integrated a custom traffic light classifier and a Gradio dashboard to visualize violations and generate e-challans.</p>
+                <img class="project-img imageReveal" src="./images/traffic.jpg" alt="Traffic" />
+                <p class="project-info fadeUp">Built a real-time system to detect red-light violations using YOLOv8 and SORT tracking. Integrated a custom traffic light classifier and a Gradio dashboard to visualize violations and generate e-challans.</p>
                 <a class="project-site-btn">Website</a>
             </div>
 
-            <div class="tile">
+            <div class="tile slideInRight">
                 <h3 class="project-heading">Eatopia - Food Ordering App</h3>
-                <img src="./images/eatopia.jpg" alt="Eatopia" />
-                <p class="project-info">Developed a food delivery and reservation app using Flutter and Firebase. Included user-friendly dashboards, secure authentication, online reservation and data handling for both customers and restaurant owners.</p>
+                <img class="project-img imageReveal" src="./images/eatopia.jpg" alt="Eatopia" />
+                <p class="project-info fadeUp">Developed a food delivery and reservation app using Flutter and Firebase. Included user-friendly dashboards, online reservation and data handling for both customers and restaurant owners.</p>
+                <a class="project-site-btn">Website</a>
+            </div>
+            
+            <div class="tile slideInUp">
+                <h3 class="project-heading">Shogi Game</h3>
+                <img class="project-img imageReveal" src="./images/shogi.jpg" alt="Shogi" />
+                <p class="project-info fadeUp">Created a console-based Shogi game in C++ using OOP principles like inheritance and polymorphism. Features include game reload/restart and custom rules inspired by the original Japanese version.</p>
                 <a class="project-site-btn">Website</a>
             </div>
 
-            <div class="tile">
-                <h3 class="project-heading">Shogi Game</h3>
-                <img src="./images/shogi.jpg" alt="Shogi" />
-                <p class="project-info">Created a console-based Shogi game in C++ using OOP principles like inheritance and polymorphism. Features include game reload/restart and custom rules inspired by the original Japanese version.</p>
-                <a class="project-site-btn">Website</a>
-            </div>
         </div>
 
     </section>
 
     <section id="contacts">
         <div class="contact-page">
-        <div class="heading">Contact <span>Me</span></div>
+        <div class="heading autoShow">Contact <span>Me</span></div>
         <div class="info-title">Let's Work Together</div>
-        <div class="description">
+        <div class="description fadeUp">
             Have a project in mind? Whether you're looking for a developer, designer, or
             just want to say hello, I'd love to hear from you! Feel free to reach out
             using the form below or through any of the following channels.
