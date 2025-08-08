@@ -12,7 +12,7 @@ const mobileNav = () => {
             document.body.style.overflowY = 'hidden';
             window.scrollTo({
                 top:0, behavior:'smooth'
-            })
+            });
         } else {
             mobileNav.style.display = 'none'; 
             document.body.style.overflowY = 'auto';

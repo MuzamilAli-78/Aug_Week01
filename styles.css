@@ -338,7 +338,7 @@ img{
     display: none;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    /* gap: 10px; */
     background-color: rgb(33, 41, 59);
     padding: 2rem;
     border-radius: 1.5rem;
@@ -350,7 +350,7 @@ img{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    gap: 1.5rem;
 
   }
 
@@ -630,15 +630,15 @@ footer{
   }
 
   .project-img{
+    border-radius: 20px;
+    border: 2px solid #ddd;}
+    /* 
     height: 13rem;
     width: 13rem;
     padding: 12px;
     margin-bottom: 15px;
     margin-top: 30px;
-    border-radius: 20px;
-    border: 2px solid #ddd;
-    margin-bottom: 15px;
-  }
+  } */
 
   .project-info{
     font-size: 16px;
@@ -793,7 +793,6 @@ footer{
     margin-top: 30px;
     border-radius: 20px;
     border: 2px solid #ddd;
-    margin-bottom: 15px;
   }
 
   .project-info{
