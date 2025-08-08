@@ -10,7 +10,9 @@ const mobileNav = () => {
         if (isMobileNavOpen){            
             mobileNav.style.display = 'flex'; 
             document.body.style.overflowY = 'hidden';
-            document.body.scroll = 'top';
+            window.scrollTo({
+                top:0, behavior:'smooth'
+            })
         } else {
             mobileNav.style.display = 'none'; 
             document.body.style.overflowY = 'auto';
