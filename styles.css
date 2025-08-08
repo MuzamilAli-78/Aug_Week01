@@ -4,7 +4,6 @@
   padding: 0;
   list-style: none;
   box-sizing: border-box;
-  /* font-family: "Roboto", sans-serif; */
   font-family: Helvetica;
 }
 
@@ -166,6 +165,16 @@ img{
   border-style: none;
 }
 
+.right-bars:hover{
+  color: rgb(255, 204, 0); 
+}
+
+.right-bars:active{
+  color: rgb(255, 204, 0); 
+}
+
+
+
 .name {
   text-transform: capitalize;
   color: white; 
@@ -181,17 +190,18 @@ img{
 
 
 .mobile-nav{
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   margin-top: 5rem;
   width: 100%;
   height: 100%;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   text-align: center;
   background-color: rgba(17, 24, 39, 1);
+  z-index: 999;
 }
 
 .mobile-nav-menu{
@@ -207,7 +217,7 @@ img{
 
 .mobile-nav-link{
   font-size: 1.5rem;
-  text-decoration: none;
+  text-decoration: flex;
   font-weight: bolder;
   color: white;
   letter-spacing: 0.05rem;
@@ -217,6 +227,7 @@ img{
 .mobile-nav-link:hover{
   color: rgb(255, 204, 0);
 }
+
 
 
 #home{
@@ -279,6 +290,7 @@ img{
   }
 
   .about-title{
+    margin-top: 40px;
     color: rgb(223, 180, 7);
     text-align: center;
   }
@@ -297,9 +309,9 @@ img{
   }
 
   .about-table{
-    gap: 12rem;
-    line-height: 3rem;
+    line-height: 4rem;
     text-align: center;
+    margin: 2.5rem 0 6rem 0;
   }
 
   .about-list{
@@ -334,6 +346,7 @@ img{
 
   
   .project_title {
+    margin-top: 35px;
     color: white;
   }
   
@@ -343,6 +356,32 @@ img{
     padding-left: 2rem;
     padding-right: 2rem; 
   }
+
+  .project-nav-btn{
+    color: black;
+    margin: 6px;
+    padding: 6px;
+    text-decoration: none;
+    border-radius: 50%;
+    background-color: rgb(107, 113, 126);
+
+  }
+
+
+  .project-nav-btn i{
+    font-size: 1.25rem;
+  }
+
+  .project-nav-btn:hover{
+    background-color: rgba(17, 24, 39, 1);
+    transition: 0.5s ease;
+  }
+
+  .project-nav-btn:hover i{
+    color: rgb(107, 113, 126);
+    transition: 0.5s ease;
+  }
+
   
   .project-site-btn {
     background-color: rgb(185, 139, 0); 
@@ -368,7 +407,6 @@ img{
     color: rgb(107, 113, 126);
   }
 }
-
 
 #contacts{
   background-color: rgba(2, 6, 23, 1);
@@ -420,6 +458,17 @@ img{
     box-sizing: border-box;
   }
 
+  textarea{
+    background-color: #1F2937;
+    color: white;
+    overflow: visible;
+    border: none;
+    padding: 10px;
+    text-align: left;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+
   .contact-btn {
     background-color: rgb(185, 139, 0); 
     color: black;
@@ -440,6 +489,48 @@ img{
     font-size: 17px;
   }
 
+}
+
+footer{
+  width: 100%;
+  text-align: center;
+  background-color: rgba(17, 24, 39, 1);
+  padding: 0.75rem 0 0.75rem 0;
+  
+}
+
+.footer-info{
+  color: rgb(107, 113, 126);
+  margin-top: 0.5rem;
+}
+
+.social-links{
+  display: flex;
+  justify-content: center;
+}
+
+.social-links a{
+  color: black;
+  margin: 6px;
+  padding: 6px;
+  text-decoration: none;
+  border-radius: 50%;
+  background-color: rgb(107, 113, 126);
+}
+
+
+.social-links a i{
+  font-size: 1em;
+}
+
+.social-links a:hover{
+  background-color: rgba(17, 24, 39, 1);
+  transition: 0.5s ease;
+}
+
+.social-links a:hover i{
+  color: rgb(107, 113, 126);
+  transition: 0.5s ease;
 }
 
 @media screen and (max-width: 767px) {
@@ -479,6 +570,7 @@ img{
   }
 
   .about-title{
+    margin-top: 35px;
     font-size: 2rem;
   }
 
@@ -501,6 +593,7 @@ img{
 
 
   .project_title {
+    margin-top: 35px;
     font-size: 2rem;
     margin-bottom: 20px;
   }
@@ -559,8 +652,13 @@ img{
     font-size: 16px;
   }
 
-}
+  textarea{
+    min-width: 5rem; 
+    font-size: 16px;
+    padding: 5px 0 5px 0;
+  }
 
+}
 
 @media screen and (min-width: 768px) and (max-width: 1280px) {
   #home{
@@ -717,8 +815,6 @@ img{
 
 
 }
-
-
 
 @media screen and (min-width: 1281px) and (max-width: 1920px) {
 
