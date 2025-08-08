@@ -331,10 +331,11 @@ img{
     flex-wrap: wrap;
     padding-top: 2rem;
     padding-bottom: 2rem;
+    transition: transform 0.3s ease;
   }
   
   .tile{
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     gap: 10px;
@@ -344,10 +345,22 @@ img{
     max-width: 500px;
   }
 
+
+  .slider-container{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+  }
+
+  .tile.active{
+    display: flex;
+
+  }
   
   .project_title {
     margin-top: 35px;
-    color: white;
+    color: rgb(255, 204, 0);
   }
   
   .project_description {
@@ -367,7 +380,6 @@ img{
 
   }
 
-
   .project-nav-btn i{
     font-size: 1.25rem;
   }
@@ -382,7 +394,6 @@ img{
     transition: 0.5s ease;
   }
 
-  
   .project-site-btn {
     background-color: rgb(185, 139, 0); 
     color: black; 
