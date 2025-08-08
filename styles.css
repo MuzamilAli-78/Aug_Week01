@@ -354,6 +354,8 @@ img{
 
   }
 
+
+
   .tile.active{
     display: flex;
 
@@ -619,6 +621,24 @@ footer{
   .project_description {
     font-size: 18px;
   }
+
+  
+  .slider-container{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+  }
+
+  .onMobileView{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .removeScreenbtn{
+    display: none;
+  }
   
   .project-site-btn {
     font-size: 14px; 
@@ -801,6 +821,10 @@ footer{
     padding-right: 0.125rem; 
   }
 
+  .onMobileView{
+    display: none;
+  }
+
   .tile:hover{
     transition: transform 0.2s ease;
     transform: scale(1.05);
@@ -937,6 +961,9 @@ footer{
     font-size: 19px; 
   }
 
+  .onMobileView{
+    display: none;
+  }
 
   .project-site-btn:hover {
     font-size: 21px;

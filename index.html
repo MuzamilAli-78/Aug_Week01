@@ -101,10 +101,11 @@
         <p class="project_description fadeUp">Here are some of the projects I've worked on, from building real-time AI systems to mobile apps and games. Each one taught me something new and helped me grow as a developer. Take a look!</p>
         
         <div class="slider-container">
-
-            <button onclick="prevCard()" class="project-nav-btn left-btn">
-                <i class="fa-solid fa-arrow-left"></i>
-            </button>
+            <div class="removeScreenbtn">
+                <button onclick="prevCard()" class="project-nav-btn left-btn">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </button>
+            </div>
     
             <div class="project-tiles ">
                 <div class="tile active">
@@ -130,10 +131,22 @@
                 
     
             </div>
-    
-            <button onclick="nextCard()" class="project-nav-btn right-btn">
-                <i class="fa-solid fa-arrow-right"></i>
-            </button>
+            <div class="removeScreenbtn">
+                <button onclick="nextCard()" class="project-nav-btn right-btn .removeScreenbtn">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+
+            <div class="onMobileView">
+                <button onclick="prevCard()" class="project-nav-btn left-btn">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </button>
+                <button onclick="nextCard()" class="project-nav-btn right-btn">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+
+            
             
         </div>
 
