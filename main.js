@@ -63,7 +63,7 @@ fetch('./data.json')
        
 
 function displayCard(data){ 
-    const container = document.getElementById('#project-tiles');
+    const container = document.querySelector('#project-tiles');
     data.map(value => {
         const card = document.createElement('div');
         card.classList.add('tile', 'active');
