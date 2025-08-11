@@ -12,9 +12,9 @@
 
 
     <title>Muzamil Ali - Hi, I'm Front-End Developer and here is my portfolio.</title>
+
 </head>
 <body>
-
    
     <div class="top-nav">
         <div class="left-items">
@@ -28,7 +28,7 @@
                 <a href="#contacts">Contacts</a>
             </div>
         </nav>
-        <button class="right-bars">
+        <button onclick="mobileNavigation()" class="right-bars">
             <i class="material-icons">menu</i>
         </button>
     </div>
@@ -185,26 +185,8 @@
         </div>
     </footer>
 
-    <script>
-        let currentIndex = 0;
-        const cards = document.querySelectorAll('.tile');
 
-        function showCard(value){
-            cards.forEach( (card, i) => {
-                card.classList.toggle('active', i === value);
-            } );
-        }
+    <script src="main.js"></script>
 
-        function nextCard() {
-            currentIndex = (currentIndex + 1) % cards.length;
-            showCard(currentIndex);
-        }
-
-        function prevCard() {
-            currentIndex = (currentIndex - 1 + cards.length) % cards.length;
-            showCard(currentIndex);
-        }
-    </script>
-    <script type="module" src="./main.js"/>
 </body>
 </html>
