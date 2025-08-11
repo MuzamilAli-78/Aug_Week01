@@ -159,17 +159,17 @@ img{
   display: none;
 }
 
-.right-bars{
+#right-bars{
   color: white;
   background-color:  rgba(17, 24, 39, 1);
   border-style: none;
 }
 
-.right-bars:hover{
+#right-bars:hover{
   color: rgb(255, 204, 0); 
 }
 
-.right-bars:active{
+#right-bars:active{
   color: rgb(255, 204, 0); 
 }
 
@@ -721,7 +721,7 @@ footer{
     color: rgb(255, 204, 0);
   }
 
-  .right-bars{
+  #right-bars{
     display: none;
   }
 
@@ -881,7 +881,7 @@ footer{
     color: rgb(255, 204, 0);
   }
 
-  .right-bars{
+  #right-bars{
     display: none;
   }
 

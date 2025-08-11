@@ -18,7 +18,7 @@ function prevCard() {
 }
 
 let isMobileNavOpen =  false;
-const rightBars = document.querySelector('.right-bars');
+const rightBars = document.querySelector('#right-bars')
 const mobileNav = document.querySelector('.mobile-nav');
 const mobileLinks = document.querySelectorAll('.mobile-nav-link')
 
