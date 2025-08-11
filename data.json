@@ -1,0 +1,29 @@
+[
+    {
+        "project_title": "Automatic - Traffic Violation", 
+        "img_src": "./images/traffic.jpg",
+        "img_alt": "Traffic",
+        "project_info": "Built a real-time system to detect red-light violations using YOLOv8 and SORT tracking. Integrated a custom traffic light classifier and a Gradio dashboard to visualize violations and generate e-challans.",
+        "project_btn": "Website",
+        "project_link": "https://github.com/Maazi-78"
+        
+    },
+    {
+        "project_title": "Eatopia - Food Ordering App", 
+        "img_src": "./images/eatopia.jpg",
+        "img_alt": "Eatopia",
+        "project_info": "Developed a food delivery and reservation app using Flutter and Firebase. Included user-friendly dashboards, online reservation and data handling for both customers and restaurant owners.",
+        "project_btn": "Website",
+        "project_link": "https://github.com/Maazi-78"
+    },
+    {
+        "project_title": "Shogi Game", 
+        "img_src": "./images/shogi.jpg",
+        "img_alt": "Shogi",
+        "project_info": "Created a console-based Shogi game in C++ using OOP principles like inheritance and polymorphism. Features include game reload/restart and custom rules inspired by the original Japanese version.",
+        "project_btn": "Website",
+        "project_link": "https://github.com/Maazi-78"
+        
+    }
+
+]

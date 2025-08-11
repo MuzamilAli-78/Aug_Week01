@@ -9,6 +9,7 @@ function showCard(value){
 
 function nextCard() {
     currentIndex = (currentIndex + 1) % cards.length;
+    // displayCard(currentIndex);
     showCard(currentIndex);
 }
 
@@ -54,3 +55,30 @@ function closeMobileNav() {
 }
  
 initMobileNavigation();
+
+
+fetch('./data.json')
+        .then(res=> res.json())
+        .then(data=> displayCard(data))
+       
+
+function displayCard(data){ 
+    const container = document.getElementById('#project-tiles');
+    data.map(value => {
+        const card = document.createElement('div');
+        card.classList.add('tile', 'active');
+        card.innerHTML = `
+            <h3 class="project-heading">${value.project_title}</h3>
+            <img class="project-img imageReveal" src="${value.img_src}" alt="${value.img_alt}" />
+            <p class="project-info fadeUp">${value.project_info}</p>
+            <a href="${value.project_link}" class="project-site-btn">${value.project_btn}</a>
+        `
+        console.log(card,"card-data");
+
+        container.append(card);
+    
+
+    });
+ 
+
+}
