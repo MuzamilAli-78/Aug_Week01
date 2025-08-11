@@ -17,36 +17,40 @@ function prevCard() {
     showCard(currentIndex);
 }
 
-let isMobileNavOpen =  false;
-const rightBars = document.querySelector('#right-bars')
+let isMobileNavOpen = false;
+const rightBars = document.querySelector('#right-bars');
 const mobileNav = document.querySelector('.mobile-nav');
-const mobileLinks = document.querySelectorAll('.mobile-nav-link')
-
-function mobileNavigation(){
-
-    rightBars.addEventListener( 'click', () => {
-        console.log(isMobileNavOpen)
-        isMobileNavOpen = !isMobileNavOpen;
-        console.log(isMobileNavOpen)
-        if (isMobileNavOpen){            
-            mobileNav.style.display = 'flex'; 
-            window.scrollTo({
-                top:0, behavior:'smooth'
-            });
-            document.body.style.overflowY = 'hidden';
-        } else {
-            mobileNav.style.display = 'none'; 
-            document.body.style.overflowY = 'auto';
-        }
-    });
-
+const mobileLinks = document.querySelectorAll('.mobile-nav-link');
+ 
+function initMobileNavigation() {
+    rightBars.addEventListener('click', toggleMobileNav);
+   
     mobileLinks.forEach(link => {
-        link.addEventListener( 'click', () => {
-            isMobileNavOpen = false;
-            mobileNav.style.display = 'none';
-            document.body.style.overflowY = 'auto';
-        })
-    })
+        link.addEventListener('click', closeMobileNav);
+    });
 }
-  
-
+ 
+function toggleMobileNav() {
+    console.log('Before toggle:', isMobileNavOpen);
+    isMobileNavOpen = !isMobileNavOpen;
+    console.log('After toggle:', isMobileNavOpen);
+   
+    if (isMobileNavOpen) {
+        mobileNav.style.display = 'flex';
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+        document.body.style.overflowY = 'hidden';
+    } else {
+        mobileNav.style.display = 'none';
+        document.body.style.overflowY = 'auto';
+    }
+}
+function closeMobileNav() {
+    isMobileNavOpen = false;
+    mobileNav.style.display = 'none';
+    document.body.style.overflowY = 'auto';
+}
+ 
+initMobileNavigation();
