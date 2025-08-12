@@ -1,21 +1,18 @@
 let currentIndex = 0;
-const cards = document.querySelectorAll('.tile');
+// let rangeIndex = [0,1];
+const container = document.getElementById('project-tiles');
 
-function showCard(value){
-    cards.forEach( (card, i) => {
-        card.classList.toggle('active', i === value);
-    } );
-}
 
 function nextCard() {
-    currentIndex = (currentIndex + 1) % cards.length;
-    // displayCard(currentIndex);
-    showCard(currentIndex);
+    currentIndex = (currentIndex + 1) % customData.length;
+    container.removeChild(container.lastChild);
+    displayCard(currentIndex);
 }
 
 function prevCard() {
-    currentIndex = (currentIndex - 1 + cards.length) % cards.length;
-    showCard(currentIndex);
+    currentIndex = (currentIndex - 1 + customData.length) % customData.length;
+    container.removeChild(container.lastChild);
+    displayCard(currentIndex);
 }
 
 let isMobileNavOpen = false;
@@ -32,9 +29,7 @@ function initMobileNavigation() {
 }
  
 function toggleMobileNav() {
-    console.log('Before toggle:', isMobileNavOpen);
     isMobileNavOpen = !isMobileNavOpen;
-    console.log('After toggle:', isMobileNavOpen);
    
     if (isMobileNavOpen) {
         mobileNav.style.display = 'flex';
@@ -56,29 +51,27 @@ function closeMobileNav() {
  
 initMobileNavigation();
 
+customData = []
 
-fetch('./data.json')
+customData = fetch('./data.json')
         .then(res=> res.json())
-        .then(data=> displayCard(data))
-       
+        .then(data=>{
+            customData = data;
+            displayCard(currentIndex);   
+        });
+   
 
-function displayCard(data){ 
-    const container = document.querySelector('#project-tiles');
-    data.map(value => {
-        const card = document.createElement('div');
-        card.classList.add('tile', 'active');
-        card.innerHTML = `
-            <h3 class="project-heading">${value.project_title}</h3>
-            <img class="project-img imageReveal" src="${value.img_src}" alt="${value.img_alt}" />
-            <p class="project-info fadeUp">${value.project_info}</p>
-            <a href="${value.project_link}" class="project-site-btn">${value.project_btn}</a>
-        `
-        console.log(card,"card-data");
-
-        container.append(card);
+function displayCard(index){ 
     
-
-    });
- 
+    const value = customData[index];
+    const card = document.createElement('div');
+    card.classList.add('tile', 'active');
+    card.innerHTML = `
+        <h3 class="project-heading">${value.project_title}</h3>
+        <img class="project-img imageReveal" src="${value.img_src}" alt="${value.img_alt}" />
+        <p class="project-info fadeUp">${value.project_info}</p>
+        <a href="${value.project_link}" class="project-site-btn">${value.project_btn}</a>
+    `
+    container.append(card);
 
 }

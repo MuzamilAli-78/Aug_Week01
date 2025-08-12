@@ -342,7 +342,8 @@ img{
     background-color: rgb(33, 41, 59);
     padding: 2rem;
     border-radius: 1.5rem;
-    max-width: 500px;
+    margin-top: 2rem;
+    max-width: 450px;
   }
 
 
@@ -353,8 +354,6 @@ img{
     gap: 1.5rem;
 
   }
-
-
 
   .tile.active{
     display: flex;
