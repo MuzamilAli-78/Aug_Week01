@@ -17,5 +17,7 @@ This is a repository of my portfolio, which showcase my skills and projects. It 
 
 # Deployed On:
 This website is deployed on both Vercel and Netlify platform. Here are the links given below:
-Vercel: [MuzamilAli](https://muzamil-portfolio-mu.vercel.app/)
-Netlify: [MuzamilAli](https://muzamilali-portfolio.netlify.app/)
+
+Vercel: https://muzamil-portfolio-mu.vercel.app/
+
+Netlify: https://muzamilali-portfolio.netlify.app/
