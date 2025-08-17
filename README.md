@@ -13,3 +13,9 @@ This is a repository of my portfolio, which showcase my skills and projects. It 
 ![Mobile View 02](images/MobileView02.png)
 ![Mobile View 03](images/MobileView03.png)
 ![Mobile View 04](images/MobileView04.png)
+
+
+# Deployed On:
+This website is deployed on both Vercel and Netlify platform. Here are the links given below:
+Vercel: [MuzamilAli](https://muzamil-portfolio-mu.vercel.app/)
+Netlify: [MuzamilAli](https://muzamilali-portfolio.netlify.app/)
